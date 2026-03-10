@@ -1,16 +1,105 @@
-# React + Vite
+# 🤖 Promptly
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18-blue)
+![Node](https://img.shields.io/badge/Node.js-Backend-green)
+![Express](https://img.shields.io/badge/Express-API-black)
+![AI](https://img.shields.io/badge/AI-HuggingFace-orange)
 
-Currently, two official plugins are available:
+A **ChatGPT-style AI conversational web application** built with **React and Node.js**.
+The application allows users to chat with an AI model, manage multiple conversations, and interact through a clean and responsive chat interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+# ✨ Project Highlights
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Built a **ChatGPT-style conversational interface using React**
+* Supports **multiple conversations with sidebar navigation**
+* Automatically generates **chat titles from the first user message**
+* Uses **React Hooks for dynamic state management**
+* Integrates **HuggingFace LLM APIs** for AI responses
+* Implements a **Node.js/Express backend proxy** to securely communicate with external APIs
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 🚀 Features
+
+### 💬 AI Chat Interface
+
+Users can interact with an AI assistant through a responsive chat interface.
+
+### 📂 Multiple Chat Sessions
+
+Create and switch between different chat conversations using the sidebar.
+
+### 🧠 Automatic Chat Titles
+
+Chat titles are generated dynamically.
+
+### ⚡ Real-Time UI Updates
+
+Messages update instantly using React state management.
+
+### 🔐 Secure API Communication
+
+Backend proxy prevents exposing API keys to the frontend.
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+* React (Vite)
+* JavaScript
+* CSS
+
+## Backend
+
+* Node.js
+* Express.js
+* Axios
+
+## AI Integration
+
+* HuggingFace Inference API
+* LLM models (Llama / FLAN)
+
+---
+
+
+---
+
+# ▶️ Running the Project
+
+## Start the backend server
+
+```bash
+cd server
+node server.js
+```
+
+Server runs at:
+
+```
+http://localhost:5001
+```
+
+---
+
+## Start the frontend
+
+```bash
+npm run dev
+```
+
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 📸 Screenshots
+
+<img width="1439" height="861" alt="Screenshot 2026-03-10 at 8 55 24 PM" src="https://github.com/user-attachments/assets/33d70d99-83a8-4d0b-93de-1ae377b7dc43" />
