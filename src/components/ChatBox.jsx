@@ -1,8 +1,15 @@
-function ChatBox(){
-    return (
-        <div className = "main-chatbox-container">
-            CHATWINDOW
-          </div>
-    )
+function ChatBox({ messages }) {
+  return (
+    <div className="chatbox-response-container">
+
+      {messages.map((msg, index) => (
+        <div key={index}>
+          {msg.text}
+        </div>
+      ))}
+
+    </div>
+  );
 }
+
 export default ChatBox;

@@ -1,20 +1,39 @@
 import { useState } from "react";
 
-function ChatInput() {
-  const[input, setMessage] = useState("");
+function ChatInput({ addMessage }) {
+
+  const [input, setInput] = useState("");
 
   function handleSend(){
+
     if(!input.trim()) return;
 
-    console.log("Message sent: ", input);
-    setMessage("");
+    addMessage({
+      role: "user",
+      text: input
+    });
+
+    setInput("");
   }
 
   return (
     <div className="chatbox-input-container">
-      <input type="text" placeholder="Type your message here..." value={input} 
-      onChange={(e) => setMessage(e.target.value)} />
-      <button className="send-button" onClick={handleSend}>Send</button>
+
+      <input
+        type="text"
+        value={input}
+        onChange={(e)=>setInput(e.target.value)}
+        onKeyDown={(e)=>{
+          if(e.key === "Enter"){
+            handleSend();
+          }
+        }}
+      />
+
+      <button onClick={handleSend}>
+        Send
+      </button>
+
     </div>
   )
 }
